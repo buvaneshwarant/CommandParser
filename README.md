@@ -4,84 +4,86 @@ The acceptable keywords are:
   1. loop -- signifies the start of the loop command function.
   2. endloop -- signifies the end of the loop function
 Everything else is a command. The commands inbetween the 'loop' and 'endloop' keyword are executed a set number of times determined by the digit after the loop keyword. 
+
 The following commands for exaxmple:
 
-open door
+        open door
 
-walk 
+        walk 
 
-loop 2
+        loop 2
 
-climb stairs
+        climb stairs
 
-endloop
+        endloop
 
-walk
+        walk
 
-open door
+        open door
 
-close door
+        close door
 
 The output for the above command would be:
 
-open door
+        open door
 
-walk 
+        walk 
 
-climb stairs
+        climb stairs
 
-climb stairs
+        climb stairs
 
-walk
+        walk
 
-open door
+        open door
 
-close door
+        close door
 
 Simillarly, we can have nested loops, or a combination of single loops and nested loops. 
 For example, the following command:
 
-loop 2
+        loop 2
+  
+        walk one step
 
-walk one step
+        end loop
 
-end loop
+        open fridge
 
-open fridge
+        loop 2
 
-loop 2
+        grab snack
 
-grab snack
+        loop 2
 
-loop 2
+        eat snack
 
-eat snack
+        endloop
 
-endloop
+        endloop
 
-endloop
-
-close fridge
+        close fridge
       
-The output for the above commands is
-walk one step
+The output for the above commands is:
 
-walk one step
+        walk one step
 
-open fridge
+        walk one step
 
-grab snack
+        open fridge
 
-eat snack
+        grab snack
 
-eat snack
+        eat snack
+  
+        eat snack
 
-grab snack
+        grab snack
 
-eat snack
+        eat snack
 
-eat snack
+        eat snack
 
-close fridge
+        close fridge
   
 In summation, this program igrnores empty lines, ignores comments, and executes commands (parses an exact set of commands to a text file). The initial product only supports the 'loop' and 'endloop' keyword. The next releases will support the 'if' and 'endif' clauses. 
