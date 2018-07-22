@@ -86,4 +86,16 @@ The output for the above commands is:
 
         close fridge
   
+Comments start with '#'. The following lines, for example. 
+
+        #eat snack
+
+        drink water
+
+The output is:
+
+        drink water
+
+As you can see the line with # is ignored. 
+
 In summation, this program igrnores empty lines, ignores comments, and executes commands (parses an exact set of commands to a text file). The initial product only supports the 'loop' and 'endloop' keyword. The next releases will support the 'if' and 'endif' clauses. 
