@@ -1,0 +1,31 @@
+Rackhome
+Rackwaitready
+Doorclose
+rundosingpump 5 1
+wait 100
+rundosingpump 5 1
+wait 100
+rundosingpump 65 1
+rackposrel 4.5
+rackwaitready
+Doorclose
+rundosingpump 5 1
+wait 100
+rundosingpump 5 1
+wait 100
+rundosingpump 65 1
+rackposrel 4.5
+rackwaitready
+Doorclose
+rundosingpump 5 1
+wait 100
+rundosingpump 5 1
+wait 100
+rundosingpump 65 1
+rackposrel 4.5
+rackwaitready
+rackhome
+rackwaitready
+doorclose
+setsuctionrinse
+suctionpumpon
